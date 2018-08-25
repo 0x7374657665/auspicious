@@ -8,4 +8,8 @@ $fa-font-path: "../node_modules/@fortawesome/fontawesome-free/webfonts" !default
 
 
 //bulma stuff
+//for info about customization: https://bulma.io/documentation/customize/variables/
+//for info about installing a bulmaswatch ready made theme: https://jenil.github.io/bulmaswatch/help/
+@import "../node_modules/bulmaswatch/yeti/_variables"; //yeti = emulates zurb foundation
 @import "../node_modules/bulma/bulma";
+@import "../node_modules/bulmaswatch/yeti/_overrides";
