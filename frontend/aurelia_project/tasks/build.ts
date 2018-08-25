@@ -1,5 +1,6 @@
 import * as webpackConfig from '../../webpack.config';
 import * as webpack from 'webpack';
+// @ts-ignore
 import * as project from '../aurelia.json';
 import {CLIOptions, Configuration} from 'aurelia-cli';
 import * as gulp from 'gulp';
@@ -13,6 +14,7 @@ const server = buildOptions.isApplicable('server');
 const extractCss = buildOptions.isApplicable('extractCss');
 const coverage = buildOptions.isApplicable('coverage');
 
+// @ts-ignore
 const config = webpackConfig({
   production, server, extractCss, coverage, analyze
 });
