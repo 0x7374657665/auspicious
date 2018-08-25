@@ -1,17 +1,6 @@
 <template>
   <require from="./app.scss"></require>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        ${message}
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>! <i class="fa fa-check"></i>
-      </p>
-      <button class="button is-primary" click.trigger="logClick($event)"><i class="fa fa-bullseye"></i>&nbsp;CLICK</button>
-      <hr>
-      <router-view></router-view>
-    </div>
-  </section>
-
+  <require from="./shell/ausp-header/ausp-header"></require>
+  <ausp-header ausp-title="AUSPicious Frontend" subtitle="AUrelia + SPring = &hearts;"></ausp-header>
+  <router-view></router-view>
 </template>
